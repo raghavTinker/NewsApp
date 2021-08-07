@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var locationManager = LocationManager()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List(topics){ topic in
+                Text(topic.title)
+            }
+            .navigationBarTitle("News")
+            
+        }
     }
 }
 
@@ -19,3 +25,15 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Topic: Identifiable{
+    let id: String
+    let title: String
+}
+
+let topics = [
+                Topic(id: "1", title: "Microsoft"),
+                Topic(id: "2", title: "Apple"),
+                Topic(id: "3", title: "Tesla")
+            ]
+    
