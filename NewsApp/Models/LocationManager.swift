@@ -48,7 +48,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate{
     func fetchCountry(lat: Double, long: Double){
         let urlString = "https://geocode.xyz/\(lat),\(long)?geoit=json"
         if let url = URL(string: urlString){
-            let session 
         }
     }
 }

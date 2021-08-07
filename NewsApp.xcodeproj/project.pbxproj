@@ -15,7 +15,6 @@
 		A03D1ECE26BE5525008D8865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03D1ECC26BE5525008D8865 /* LaunchScreen.storyboard */; };
 		A03D1ED926BE5525008D8865 /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D1ED826BE5525008D8865 /* NewsAppTests.swift */; };
 		A03D1EE426BE5525008D8865 /* NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D1EE326BE5525008D8865 /* NewsAppUITests.swift */; };
-		A03D1EF326BE5880008D8865 /* NetoworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D1EF226BE5880008D8865 /* NetoworkManager.swift */; };
 		A03D1F3526BEBB22008D8865 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D1F3426BEBB22008D8865 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		A03D1EDF26BE5525008D8865 /* NewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03D1EE326BE5525008D8865 /* NewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITests.swift; sourceTree = "<group>"; };
 		A03D1EE526BE5525008D8865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A03D1EF226BE5880008D8865 /* NetoworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetoworkManager.swift; sourceTree = "<group>"; };
 		A03D1F3426BEBB22008D8865 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,7 +142,6 @@
 		A03D1EF126BE5866008D8865 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A03D1EF226BE5880008D8865 /* NetoworkManager.swift */,
 				A03D1F3426BEBB22008D8865 /* LocationManager.swift */,
 			);
 			path = Models;
@@ -280,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03D1EF326BE5880008D8865 /* NetoworkManager.swift in Sources */,
 				A03D1EC226BE5524008D8865 /* AppDelegate.swift in Sources */,
 				A03D1F3526BEBB22008D8865 /* LocationManager.swift in Sources */,
 				A03D1EC426BE5524008D8865 /* SceneDelegate.swift in Sources */,
