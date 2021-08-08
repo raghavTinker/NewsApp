@@ -24,10 +24,6 @@ struct ContentView: View {
             if $0 != nil{
                 self.newsManager.fetchNews()
             }
-            else{
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: .accentColor))
-            }
         }
     }
 }
