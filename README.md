@@ -1,4 +1,7 @@
 # NewsApp
+
+Trying my hands in iOS development!
+
 Country based news app built for iOS devices using SwiftUI
 
 For country code I made a small Flask API to get the country code and name from the latitude and longitudes and also used the Geopy library in python.
