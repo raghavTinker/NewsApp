@@ -10,15 +10,12 @@ import MapKit
 
 struct CountryCode: Decodable{
     let country: String
+    let country_name: String
 }
 
-class CountryGiver{
-    
-}
 class LocationManager: NSObject, ObservableObject{
     private let locationManager = CLLocationManager()
     @Published var country: String? = nil
-    
     override init(){
         super.init()
         self.locationManager.delegate  = self
@@ -42,8 +39,9 @@ class LocationManager: NSObject, ObservableObject{
                             let results = try decoder.decode(CountryCode.self, from: safeData)
                             DispatchQueue.main.async {
                                 self.country = results.country
+                                BasicUtilities.country = results.country
+                                BasicUtilities.country_name = results.country_name
                                 self.locationManager.stopUpdatingLocation()
-                                print(results.country)
                             }
                         }
                         catch{
@@ -63,6 +61,5 @@ extension LocationManager: CLLocationManagerDelegate{
             return
         }
         self.fetchCountryCode(lat: Float(location.coordinate.latitude), long: Float(location.coordinate.longitude))
-        
     }
 }

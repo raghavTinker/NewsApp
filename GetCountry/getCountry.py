@@ -1,11 +1,12 @@
 from geopy.geocoders import Nominatim
 
 
-def getCountry(latitude: float, longitude: float) -> str:
+def getCountry(latitude, longitude) -> {str : str}:
     geolocator = Nominatim(user_agent="CountryName")
 
     location = geolocator.reverse(latitude + ", " + longitude)
+    print(location.raw["address"]["country"])
     try:
-        return location.raw["address"]["country_code"]
+        return {"country" : location.raw["address"]["country_code"], "country_name" : location.raw["address"]["country"]}
     except:
-        return "us"
+        return {"country" : "us", "country_name" : "USA"}
