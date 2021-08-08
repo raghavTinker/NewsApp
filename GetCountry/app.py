@@ -7,7 +7,7 @@ from getCountry import getCountry
 app = flask.Flask(__name__)
 @app.route('/')
 def index():
-    return "raghavTinker is a moron. He has some apis"
+    return "Bleh. This subdomain contains raghavTinker's experiments.<br> For country code: https://raghavtinker.servatom.com/country?lat=<LATITUDE>&long<LONGITUDE>"
 
 @app.route('/country') 
 def country():
